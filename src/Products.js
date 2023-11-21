@@ -10,7 +10,7 @@ const Products = ({ token, setView }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/products', {
+        const response = await axios.get('https://productlist-backend-zb7k.onrender.com/products', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
