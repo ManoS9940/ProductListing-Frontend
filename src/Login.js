@@ -7,7 +7,7 @@ const Login = ({ setToken, setView }) => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/login', {
+      const response = await axios.post('https://productlist-backend-zb7k.onrender.com/login', {
         username,
         password,
       });
